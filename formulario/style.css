@@ -54,8 +54,21 @@ label {
     color: rgb(214, 139, 139)
 }
 
-.estado {
+#estado {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(214, 139, 139);
     font-weight: bold;
+    border: 1px white;
+    border-radius: 10px;
 }
+
+#data {
+    font-weight: bold; /* Texto em negrito */
+    color: rgb(214, 139, 139); /* Cor azul */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
+#checkbox::selection{
+    /* Estilos para o estado marcado (opcional) */
+    background-color:rgb(214, 139, 139);;
+  }

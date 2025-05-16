@@ -11,37 +11,61 @@
     
     <div class="container">
         <h2>Formulário</h2>
+
         <form action="">
-            <label for="nome">Nome: </label>
+
+            <!--Texto-->
+            <label for="nome">Nome: </label> <!--"for" indica a qual id a label está associada-->
             <input type="text" name="nome" id="nome"> <br>
+
+            <!--Email-->
             <label for="email">Email: </label> 
             <input type="email" name="email" id="email" required> <br>
+
+            <!--Senha-->
             <label for="senha">Senha: </label> 
             <input type="password" name="senha" id="senha"> <br>
+
+            <!--Número-->
             <label for="idade">Número: </label> 
             <input type="number" name="idade" id="idade"> <br>
+
+            <!--Data-->
             <label for="data">Data: </label> 
             <input type="date" name="nascimento" id="data"> <br>
+
+            <!--Rádio-->
             <p id="genero">Gênero: </p>
-            <label for="radio_fem">Masculino<input type="radio" name="genero" value="M" id="radio_fem"></label>  <br>
+            <label for="radio_fem">Masculino<input type="radio" name="genero" value="M" id="radio_fem"></label>  <br> <!-- for = id -->
             <label for="radio_masc">Feminino<input type="radio" name="genero" value="F" id="radio_masc"></label> <br>
             <br>
+
+            <!--Comentário-->
             <label for="comentario">Comentário: </label> <br>
-            <textarea name="mensagem" id="comentario" rows="5" cols="30"></textarea> <br> 
+            <textarea name="mensagem" id="comentario" rows="5" cols="30"></textarea> <br>  <!--5 linhas e 30 colunas-->
             <br>
+
+            <!--Opção-->
             <label for="estado">Estado: </label> <br>
             <select name="estado" id="estado">
-                <option value="sp">São Paulo</option>
+
+                <option value="sp">São Paulo</option> <!-- value: valor real que será enviado quando o formulário for enviado -->
                 <option value="rj">Rio de Janeiro</option>
                 <option value="mg">Minas Gerais</option> 
             </select> <br>
             <br>
+
+            <!--Checkbox-->
             <label for="checkbox">Aceito os termos</label> 
             <input type="checkbox" name="termos" id="checkbox">
             <br>
+            <br>
+
+            <!--Botão-->
             <input type="submit" value="Enviar" class="botao"> <br>
             <input type="reset" value="Limpar" class="botao"> <br>
             <br>    
+
         </form>
     </div>
     
