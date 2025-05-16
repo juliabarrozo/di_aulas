@@ -1,11 +1,5 @@
-h2 {
-    text-align: center;
-    color: rgb(214, 139, 139);
-    font-family: Arial, Helvetica, sans-serif;
-}
-
 body {
-    background-color: rgb(248, 228, 231);
+    background: linear-gradient(to bottom, #f8e4e7, #ffffff);;
     margin: 0;
     height: 100vh;
 
@@ -16,19 +10,26 @@ body {
 }
 
 .container {
+    /* Centralizar */
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
 form {
-    background-color: rgb(255, 214, 214);
+    background-color:#f8e4e7;
     height: 500px;
     width: 400px;
     text-align: center;
     padding: 20px;
     border-radius: 10px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: rgb(214, 139, 139);
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 input, textarea {
@@ -44,14 +45,16 @@ label {
 
 }
 
+#data {
+    font-weight: bold; /* Texto em negrito */
+    color: rgb(214, 139, 139); /* Cor azul */
+    font-size: 16px; /* Tamanho da fonte */
+}
+
 #genero {
     font-family: Arial, Helvetica, sans-serif;
     color: rgb(214, 139, 139);
     font-weight: bold;
-}
-
-.botao {
-    color: rgb(214, 139, 139)
 }
 
 #estado {
@@ -62,13 +65,10 @@ label {
     border-radius: 10px;
 }
 
-#data {
-    font-weight: bold; /* Texto em negrito */
-    color: rgb(214, 139, 139); /* Cor azul */
-    font-size: 16px; /* Tamanho da fonte */
+.botao {
+    background-color: white;
+    color: rgb(214, 139, 139)
+    
 }
 
-#checkbox::selection{
-    /* Estilos para o estado marcado (opcional) */
-    background-color:rgb(214, 139, 139);;
-  }
+

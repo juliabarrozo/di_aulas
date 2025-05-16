@@ -14,13 +14,17 @@
 
         <form action="">
 
+            <!-- label: for e nome -->
+            <!--input: type, name e id -->
+            <!-- for tem que ser igual ao id -->
+
             <!--Texto-->
             <label for="nome">Nome: </label> <!--"for" indica a qual id a label está associada-->
-            <input type="text" name="nome" id="nome"> <br>
+            <input type="text" name="nome" id="nome" pattern="[A-Za-z]{3,}"> <br> <!-- pattern: usa regex para restringir, apenas letras e no mínimo 3 dígitos -->
 
             <!--Email-->
             <label for="email">Email: </label> 
-            <input type="email" name="email" id="email" required> <br>
+            <input type="email" name="email" id="email" required> <br> <!-- required: obrigatorio-->
 
             <!--Senha-->
             <label for="senha">Senha: </label> 
@@ -28,15 +32,15 @@
 
             <!--Número-->
             <label for="idade">Número: </label> 
-            <input type="number" name="idade" id="idade"> <br>
+            <input type="number" name="idade" id="idade" min="1" max="100"> <br> 
 
             <!--Data-->
             <label for="data">Data: </label> 
             <input type="date" name="nascimento" id="data"> <br>
 
-            <!--Rádio-->
+            <!--Rádio: cria botões de opção -->
             <p id="genero">Gênero: </p>
-            <label for="radio_fem">Masculino<input type="radio" name="genero" value="M" id="radio_fem"></label>  <br> <!-- for = id -->
+            <label for="radio_fem">Masculino<input type="radio" name="genero" value="M" id="radio_fem"></label>  <br> 
             <label for="radio_masc">Feminino<input type="radio" name="genero" value="F" id="radio_masc"></label> <br>
             <br>
 
@@ -48,10 +52,12 @@
             <!--Opção-->
             <label for="estado">Estado: </label> <br>
             <select name="estado" id="estado">
-
+                <option value="" selected disabled>Selecione um curso</option> <!-- selected disabled: default, primeiro e não é possivel selecionar-->
+                <!-- selected: default, primeiro -->
                 <option value="sp">São Paulo</option> <!-- value: valor real que será enviado quando o formulário for enviado -->
-                <option value="rj">Rio de Janeiro</option>
-                <option value="mg">Minas Gerais</option> 
+                <option value="rj" disabled >Rio de Janeiro</option> <!-- disabled impede selecção da opção -->
+                <option value="mg">Minas Gerais</option>
+                <option value="df">Distrito Federal</option>
             </select> <br>
             <br>
 
